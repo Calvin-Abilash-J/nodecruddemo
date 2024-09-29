@@ -1,10 +1,12 @@
 import express from "express";
-import {demoRequestData,demoCreateData,
+import {demoRequestData,demoCreateData,demoRequestDetails,
 demoDeleteData,
 demoUpdateData} from '../controller/Demo.controller.js'
 const router = express.Router();
 
-router.get('/gettingValue/:id',demoRequestData)
+router.get('/gettingValue',demoRequestData)
+
+router.get('/gettingValueById/:id',demoRequestDetails)
 
 router.post('/sendingValue/:id',demoCreateData)
 
