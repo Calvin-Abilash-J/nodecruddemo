@@ -3,7 +3,12 @@ export const demoRequestData = (req,res)=>{
 }
 
 export const demoCreateData = (req,res) =>{
-    res.send("demoCreateData has send a createRequest");
+    // res.send("demoCreateData has send a createRequest");
+
+    console.log(req.body);
+
+    return res.json(req.body);
+    
 }
 
 export const demoDeleteData = (req,res) =>{

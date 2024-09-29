@@ -8,7 +8,7 @@ router.get('/gettingValue/:id',demoRequestData)
 
 router.post('/sendingValue/:id',demoCreateData)
 
-router.delete('/deletingValue',demoDeleteData)
+router.delete('/deletingValue/:id',demoDeleteData)
 
 router.put('/updating/:id',demoUpdateData)
 

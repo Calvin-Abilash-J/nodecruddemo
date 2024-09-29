@@ -4,6 +4,8 @@ import connectDb from "./lib/db.js";
 const app = express();
 const port = 4000;
 
+app.use(express.json());
+
 app.use('/api',routerApi);
 
 connectDb();
